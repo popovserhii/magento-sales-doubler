@@ -2,7 +2,7 @@
 <config>
 	<sections>
 		<popov_salesDoubler module="popov_salesDoubler" translate="label">
-			<label>Sales Doubler Tags</label>
+			<label>Sales Doubler</label>
 			<sort_order>200</sort_order>
 			<show_in_default>1</show_in_default>
 			<show_in_website>1</show_in_website>

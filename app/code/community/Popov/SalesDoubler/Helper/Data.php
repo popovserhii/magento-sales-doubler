@@ -16,8 +16,8 @@ class Popov_SalesDoubler_Helper_Data extends Mage_Core_Helper_Abstract
         }
 
         $cookie = Mage::getSingleton('core/cookie');
-        $cookie->set('AFF_ID', $request->get('aff_id'), time() + 7776000, '/'); // 90 days
-        $cookie->set('AFF_SUB', $request->get('aff_sub'), time() + 7776000, '/'); // 90 days
+        $cookie->set('SALESDOUBLER_AFF_ID', $request->get('aff_id'), time() + 7776000, '/'); // 90 days
+        $cookie->set('SALESDOUBLER_AFF_SUB', $request->get('aff_sub'), time() + 7776000, '/'); // 90 days
 
         return true;
     }
@@ -28,7 +28,7 @@ class Popov_SalesDoubler_Helper_Data extends Mage_Core_Helper_Abstract
         //$utmUidName = $config['modules']['Popov_SalesDoubler']['utm_uid_name'];
         $cookie = Mage::getSingleton('core/cookie');
 
-        $cookie->delete('AFF_ID');
-        $cookie->delete('AFF_SUB');
+        $cookie->delete('SALESDOUBLER_AFF_ID');
+        $cookie->delete('SALESDOUBLER_AFF_SUB');
     }
 }
